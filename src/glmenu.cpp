@@ -1,4 +1,5 @@
 #include "glmenu.h"
+#include "emptymenuhandling.h"
 #include "emuhandling.h"
 #include "inputhandling.h"
 #include "systeminfo.h"
@@ -172,7 +173,8 @@ void parsedesktopfiles()
 				}
 			}
 		}
-	}	
+	}
+	FixEmptyMenus(TyphonConfig *mecfg);
 }
 
 void calcfademenu()

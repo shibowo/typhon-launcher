@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 PROJECT (typhon)
 SET(SOURCES
+	emptymenuhandling.cpp
 	shadermanager.cpp
 	cmdlinehandling.cpp
 	confighandling.cpp

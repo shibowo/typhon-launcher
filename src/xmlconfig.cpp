@@ -333,7 +333,7 @@ std::string mentry(int menu,int count)
 				exit(-1);
 			}
 			if(!mecfg->sub(menu)->sub("entry")->sub(count)){
-				return "Empty Menu";	
+				return "Broken Program Entry";	
 			}	
 			if(tycfg->sub("globalswitches")->getBool("entrynames"))
 				return mecfg->sub(menu)->sub("entry")->sub(count)->getString("name");
