@@ -389,5 +389,5 @@ Credits:
 - An "anonymous contributor" for the dutch translation
 - Kathrin Schaumburg for the default theme's gfx
 - The authors of libp3t
-- Me (cherrryb0mb) for picking this project up and maintaining it
+- Me (shibowo) for picking this project up and maintaining it
 
