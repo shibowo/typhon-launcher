@@ -247,7 +247,6 @@ void domenuchange(int here)
 	else
 	{
 		restartmedia();
-		scaleicons();
 		rtcfg->setBool("changemenu",1);
 
 		if (thcfg->sub("switches")->getBool("randomwallpaper") && !thcfg->sub("switches")->getBool("usemenuwallpaper"))

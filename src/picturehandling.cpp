@@ -606,19 +606,6 @@ void drawback(sf::Texture *oldID,sf::Texture *newID)
 	glPopMatrix();
 }
 
-void scaleicons()
-{
-	if (thcfg->sub("objects")->sub("menuicon")->getBool("enabled") && thcfg->sub("ints")->getInt("menuicondockstyle")!=0)
-	{
-		((TConfig<float>*) rtcfg->sub("scaleicon")->get("icon0"))->operator+(0.3);
-		if(rtcfg->sub("scaleicon")->getFloat("icon0")>=2.1)	rtcfg->sub("scaleicon")->setC("icon0",(float)2.1);
-		((TConfig<float>*) rtcfg->sub("scaleicon")->get("icon1"))->operator+(0.2);
-		if(rtcfg->sub("scaleicon")->getFloat("icon1")>=1.80)	rtcfg->sub("scaleicon")->setC("icon1",(float)1.80);
-		((TConfig<float>*) rtcfg->sub("scaleicon")->get("icon2"))->operator+(0.1);
-		if(rtcfg->sub("scaleicon")->getFloat("icon2")>=1.5)	rtcfg->sub("scaleicon")->setC("icon2",(float)1.5);
-	}
-}
-
 void iconcube(float fmicon,int thisicon)
 {
 	drawcube
